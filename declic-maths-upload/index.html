@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Déclic Maths · Arithmétique dans ℕ</title>
+<meta name="description" content="Révise l’arithmétique dans ℕ : cours courts, exercices expliqués, entraînement et contrôle blanc. Une préparation ciblée pour le tronc commun au Maroc.">
+<meta property="og:title" content="Déclic Maths · Arithmétique dans ℕ">
+<meta property="og:description" content="Comprendre la méthode, s’entraîner, puis se tester. Tronc commun.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23166b56'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-size='42' fill='white'%3Eℕ%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="exam.css">
+<script src="content.js" defer></script><script src="resources.js" defer></script><script src="exam-data.js" defer></script><script src="exam.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header><a class="brand" href="./"><span class="brand-icon">ℕ</span> déclic<span class="muted">maths</span></a><span class="tag">TRONC COMMUN · MAROC</span></header>
+<main id="main">
+<section class="hero"><div><p class="eyebrow">UN CHAPITRE. UNE MÉTHODE. À TOI DE JOUER.</p><h1>L’arithmétique,<br>ça se comprend.</h1><p class="intro">Pas besoin de tout revoir. Comprends l’idée, essaie sans regarder, puis apprends de ta correction.</p><a class="primary button" href="#workspace">Commencer la révision <span aria-hidden="true">↗</span></a></div><aside class="route"><span class="eyebrow">TU AS PEU DE TEMPS ?</span><h2>Le parcours express</h2><ol><li><strong>10 min · Comprendre</strong><span>Divisibilité, nombres premiers, PGCD / PPCM.</span></li><li><strong>15 min · Pratiquer</strong><span>Un essai, un indice, une correction expliquée.</span></li><li><strong>60 min · Sujet rédigé</strong><span>Un contrôle de synthèse, comme sur une copie.</span></li></ol><p>Durées conseillées, à adapter à ton rythme.</p></aside></section>
+<div class="progress-line"><span id="progress-text">Ta progression reste sur cet appareil.</span><progress id="progress" value="0" max="28" aria-label="Exercices réussis sans correction"></progress><button id="reset" class="text-button">Effacer ma progression</button></div>
+<nav class="tabs" aria-label="Modes de révision"><button data-view="learn" aria-pressed="true">01 Comprendre</button><button data-view="practice" aria-pressed="false">02 S’entraîner</button><button data-view="exam" aria-pressed="false">03 Contrôle blanc</button><button data-view="resources" aria-pressed="false">Vidéos & sujets ↗</button></nav>
+<div id="workspace">
+<section id="learn-view" aria-label="Leçons"><div class="section-head"><div><p class="eyebrow">L’ESSENTIEL, SANS LE SUPERFLU</p><h2>Comprends avant de calculer.</h2></div><p>Les sept étapes de ton chapitre.</p></div><div class="learn-layout"><nav id="lesson-list" aria-label="Chapitres"></nav><article id="lesson-detail" class="card"><h3>Le programme de révision</h3><p>Entiers naturels et parité → divisibilité → division euclidienne → nombres premiers → décomposition → PGCD → PPCM.</p><p>ℕ contient 0. Un diviseur utilisé dans une division doit être non nul. Le reste vérifie toujours 0 ≤ r &lt; b.</p></article></div></section>
+<section id="practice-view" hidden aria-label="Exercices"><div class="section-head"><div><p class="eyebrow">ESSAYER → COMPRENDRE → REFAIRE</p><h2>À toi de trouver.</h2></div><label>Thème <select id="topic"><option value="all">Tout le chapitre</option><option value="mistakes">Mes erreurs à revoir</option></select></label></div><div id="exercise-area" class="card"></div></section>
+<section id="exam-view" hidden aria-label="Contrôle blanc"><div class="section-head"><div><p class="eyebrow">UN ENTRAÎNEMENT, PAS UNE ANNALE</p><h2>Le moment de vérifier.</h2></div></div><div id="exam-area" class="card"><p>Un sujet rédigé de 60 minutes conseillées, en 5 exercices, avec un barème proposé sur 20. Rédige les calculs et les démonstrations. L’analyse des thèmes retenus, le sujet imprimable et la correction guidée sont disponibles avec JavaScript.</p></div></section>
+<section id="resources-view" hidden aria-label="Vidéos et annales"><div class="section-head"><div><p class="eyebrow">POUR DÉBLOQUER UN POINT PRÉCIS</p><h2>Regarde utile. Puis pratique.</h2></div></div><p>Choisis seulement la vidéo du point qui bloque. Mets sur pause avant la solution et essaie toi-même.</p><div id="resource-list"></div><aside class="notice"><strong>Et les examens de ton lycée à Casablanca ?</strong><p>Il manque le nom du lycée. La fiche proposée est un entraînement général de tronc commun, pas une annale identifiée de ton établissement.</p></aside></section>
+</div>
+<noscript><div class="notice">Active JavaScript pour les questions interactives. À retenir : pair = 2k, impair = 2k+1 ; a = bq+r avec 0 ≤ r &lt; b ; PGCD = facteurs communs aux plus petits exposants ; PPCM = tous les facteurs aux plus grands exposants. Pour a,b &gt; 0, PGCD(a,b) × PPCM(a,b) = a × b.</div></noscript>
+<footer>Créé pour réviser, pas pour apprendre par cœur. <span>Sans compte · sans publicité · progression locale</span></footer>
+</main>
+</body></html>

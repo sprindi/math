@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Corrigé détaillé — Série d’arithmétique dans ℕ</title>
+<style>
+@page{size:A4;margin:17mm 17mm 18mm}*{box-sizing:border-box}body{font:11pt/1.52 'DejaVu Sans',Arial,sans-serif;color:#20312d;background:#edf2ed;margin:0}main{max-width:850px;margin:25px auto;background:white;padding:40px}h1{font-size:25pt;line-height:1.18;letter-spacing:-.8px;margin:10px 0 15px}h2{font-size:17pt;color:#17634e;border-bottom:1px solid #ceddd4;padding-bottom:7px;margin:0 0 17px}h3{font-size:11pt;margin:19px 0 7px}p{margin:7px 0}.eyebrow{font-size:9pt;letter-spacing:1.3px;color:#17634e;font-weight:bold}.sub{font-size:10pt;color:#51635a}.box{background:#eef5ee;border-left:3px solid #17634e;padding:10px 13px;margin:14px 0}.warning{background:#fff5de;border-left:3px solid #ad791a;padding:10px 13px;margin:13px 0}.answer{font-weight:bold;color:#124f3e}.math{font-family:'DejaVu Sans',Arial,sans-serif}.formula{padding:8px 12px;background:#f5f7f4;margin:8px 0}.source{font-size:8pt;overflow-wrap:anywhere;color:#52645b}.page{break-after:page}.page:last-child{break-after:auto}table{width:100%;border-collapse:collapse;margin:12px 0;font-size:10pt}th,td{padding:7px 9px;text-align:left;border:1px solid #d5dfd7}th{background:#eef5ee}tr{break-inside:avoid}ul,ol{padding-left:23px;margin:8px 0}li{margin:4px 0}.screenbar{max-width:850px;margin:20px auto}a{color:#17634e}button{padding:10px 16px;background:#17634e;color:white;border:0;border-radius:6px;cursor:pointer;font:inherit}.footer-note{font-size:9pt;color:#52645b;margin-top:18px}.compact{font-size:10pt}@media print{body{background:white;font-size:10pt;line-height:1.35}main{padding:0;margin:0;max-width:none}.screenbar{display:none}h1{font-size:23pt;margin:8px 0 12px}h2{font-size:15pt;margin-bottom:12px}h3{font-size:10pt;margin:12px 0 5px}p{margin:5px 0}.formula{padding:6px 10px;margin:6px 0}.box,.warning{padding:8px 11px;margin:10px 0}.compact{font-size:9pt}th,td{padding:5px 8px}table{font-size:9pt}h2,h3{break-after:avoid}.box,.warning{break-inside:avoid}}@media(max-width:600px){main{padding:20px;margin:0}h1{font-size:23pt}.screenbar{padding:10px}table{font-size:9pt}th,td{padding:5px}.page{margin-bottom:35px}}
+</style></head><body>
+<div class="screenbar"><a href="./">← Revenir à l’application</a> · <a href="correction-arithmetique.pdf">Télécharger le PDF</a> · <button id="print">Imprimer</button></div>
+<main>
+<section class="page" aria-label="Page 1 — Exercice 1">
+<div class="eyebrow">DÉCLIC MATHS · TRONC COMMUN</div><h1>Arithmétique dans ℕ<br>Le corrigé, pas à pas.</h1>
+<p class="sub">Les 7 exercices de la série « Arithmétique dans IN », document attribué à Prof. Atmani Najib. Correction pédagogique indépendante, non officielle.</p>
+<p class="source">Énoncé : https://digischool.ma/wp-content/uploads/2024/01/arithmetique-dans-in-exercices-non-corriges-9-1.pdf</p>
+<div class="box"><strong>Comment l’utiliser :</strong> cherche d’abord sur papier ; lis ensuite seulement la partie qui te bloque. ℕ = {0,1,2,…}. Dans ce corrigé, PPCM désigne le « PPMC » du document.</div>
+<h2>Exercice 1 · Diviseurs et système</h2>
+<h3>1. Les diviseurs de 12</h3>
+<p>On cherche les entiers naturels non nuls d tels que 12 = dk avec k entier naturel. Les produits 1 × 12, 2 × 6 et 3 × 4 donnent toutes les possibilités.</p>
+<p class="answer">D(12) = {1, 2, 3, 4, 6, 12}.</p>
+<h3>2.a. Montrer que x − 3 &lt; y − 2</h3>
+<p>Le système impose x &lt; y + 1. En soustrayant 3 aux deux membres, on obtient directement :</p>
+<div class="formula">x − 3 &lt; y + 1 − 3 = y − 2.</div>
+<h3>2.b. Résoudre (x − 3)(y − 2) = 12 et x &lt; y + 1 dans ℕ²</h3>
+<p>Posons u = x − 3 et v = y − 2. Alors uv = 12 et u &lt; v. Comme le produit est positif, u et v ont le même signe.</p>
+<p><strong>Ne pas oublier les signes :</strong> si u et v étaient négatifs, x,y ≥ 0 donneraient −3 ≤ u ≤ −1 et −2 ≤ v ≤ −1, donc uv ≤ 6, impossible puisque uv = 12. Ils sont donc tous deux positifs.</p>
+<p>Les seules paires de diviseurs positifs de 12 avec u &lt; v sont :</p>
+<table><thead><tr><th>u</th><th>v</th><th>x = u + 3</th><th>y = v + 2</th></tr></thead><tbody><tr><td>1</td><td>12</td><td>4</td><td>14</td></tr><tr><td>2</td><td>6</td><td>5</td><td>8</td></tr><tr><td>3</td><td>4</td><td>6</td><td>6</td></tr></tbody></table>
+<p class="answer">S = {(4,14), (5,8), (6,6)}.</p><p>Ces trois couples vérifient bien le produit et l’inégalité. Par exemple, pour (6,6) : (6−3)(6−2) = 12 et 6 &lt; 7.</p>
+</section>
+<section class="page" aria-label="Page 2 — Exercices 2 et 3">
+<h2>Exercice 2 · Calculer le PGCD et le PPCM</h2>
+<div class="box compact"><strong>Méthode :</strong> décomposer en facteurs premiers. Pour le PGCD, prendre les facteurs communs aux plus petits exposants. Pour le PPCM, prendre tous les facteurs aux plus grands exposants.<br><strong>Vérification :</strong> pour a,b &gt; 0, PGCD(a,b) × PPCM(a,b) = ab.</div>
+<h3>1. a = 125 et b = 650</h3>
+<p>125 = 5³ ; 650 = 2 × 5² × 13.</p><p class="answer">PGCD = 5² = 25 ; PPCM = 2 × 5³ × 13 = 3 250.</p>
+<h3>2. a = 660 et b = 210</h3>
+<p>660 = 2² × 3 × 5 × 11 ; 210 = 2 × 3 × 5 × 7.</p><p class="answer">PGCD = 2 × 3 × 5 = 30 ; PPCM = 2² × 3 × 5 × 7 × 11 = 4 620.</p>
+<h3>3. a = 107 et b = 408</h3>
+<p>107 est premier : aucun des nombres premiers 2,3,5,7 ne le divise et 10² &lt; 107 &lt; 11². D’autre part, 408 = 2³ × 3 × 17. Aucun facteur premier n’est commun.</p><p class="answer">PGCD = 1 ; PPCM = 107 × 408 = 43 656.</p>
+<h3>4. a = 1 150 et b = 1 250</h3>
+<p>1 150 = 2 × 5² × 23 ; 1 250 = 2 × 5⁴.</p><p class="answer">PGCD = 2 × 5² = 50 ; PPCM = 2 × 5⁴ × 23 = 28 750.</p>
+<h2 style="margin-top:26px">Exercice 3 · Utiliser les facteurs premiers</h2>
+<h3>1. 48 et 72</h3>
+<p>48 = 2⁴ × 3 ; 72 = 2³ × 3².</p><p class="answer">PGCD(48,72) = 2³ × 3 = 24.<br>PPCM(48,72) = 2⁴ × 3² = 144.</p>
+<h3>2. 125 et 175</h3>
+<p>125 = 5³ ; 175 = 5² × 7.</p><p class="answer">PGCD(125,175) = 5² = 25.<br>PPCM(125,175) = 5³ × 7 = 875.</p>
+<h3>3. Respecter ce qui est imprimé</h3>
+<p>74 = 2 × 37 ; 185 = 5 × 37. Le seul facteur premier commun est 37.</p>
+<p class="answer">PGCD(74,185) = 37 ; PPCM(48,72) = 144.</p>
+<div class="warning compact"><strong>Attention à l’énoncé :</strong> la question 3 imprime bien « PGDC(74;185) et PPMC(48;72) ». Il peut s’agir d’une coquille, mais nous ne la modifions pas en silence. <strong>Si le professeur voulait PPCM(74,185), sa valeur serait 2 × 5 × 37 = 370.</strong></div>
+</section>
+<section class="page" aria-label="Page 3 — Exercices 4 et 5">
+<h2>Exercice 4 · Prouver que a et b sont premiers entre eux</h2>
+<p><strong>Hypothèses :</strong> a et b sont des entiers naturels non nuls et ab = a ∨ b. Dans cet énoncé, a ∨ b désigne le PPCM(a,b).</p>
+<p>Pour deux entiers strictement positifs, on connaît l’identité :</p>
+<div class="formula">PGCD(a,b) × PPCM(a,b) = ab.</div>
+<p>En remplaçant ab par PPCM(a,b), on obtient :</p>
+<div class="formula">PGCD(a,b) × PPCM(a,b) = PPCM(a,b).</div>
+<p>Le PPCM est strictement positif. On peut donc diviser par lui :</p>
+<p class="answer">PGCD(a,b) = 1. Ainsi a et b sont premiers entre eux.</p>
+<div class="box compact"><strong>Pourquoi « non nuls » ?</strong> Cette condition permet d’utiliser un PPCM strictement positif et de diviser par lui. « Premiers entre eux » signifie PGCD = 1, pas nécessairement que chacun est premier.</div>
+<h2 style="margin-top:29px">Exercice 5 · Chiffres et divisibilité</h2>
+<p>On note N = <span style="text-decoration:overline">xyz</span> = 100x + 10y + z, avec 1 ≤ x ≤ 9 et 0 ≤ y,z ≤ 9. La barre désigne l’écriture décimale, <strong>pas le produit x × y × z</strong>.</p>
+<h3>1. Montrer que n = <span style="text-decoration:overline">xyz</span> − <span style="text-decoration:overline">zyx</span> est multiple de 99 (x &gt; z)</h3>
+<div class="formula">n = (100x + 10y + z) − (100z + 10y + x)<br>n = 99x − 99z = 99(x − z).</div>
+<p>x − z est un entier naturel strictement positif, donc <strong>n est un multiple de 99</strong>. Si z = 0, le nombre renversé se lit avec un zéro initial, sans effet sur sa valeur.</p>
+<h3>2. Si x + y + z = 9, montrer que N est divisible par 9</h3>
+<p>La somme des chiffres vaut 9, donc le critère de divisibilité par 9 suffit. On peut aussi écrire :</p>
+<div class="formula">N = 99x + 9y + (x + y + z)<br>= 99x + 9y + 9 = 9(11x + y + 1).</div>
+<p class="answer">9 divise N.</p>
+<h3>3. Si y = x + z, montrer que N est divisible par 11</h3>
+<div class="formula">N = 100x + 10(x + z) + z<br>= 110x + 11z = 11(10x + z).</div>
+<p class="answer">11 divise N.</p><p>Autre lecture : la somme des chiffres en positions alternées donne (x + z) − y = 0, qui est un multiple de 11.</p>
+</section>
+<section class="page" aria-label="Page 4 — Exercices 6 et 7">
+<h2>Exercice 6 · Trouver un chiffre</h2>
+<p class="compact">Chaque lettre est un chiffre, donc un entier de 0 à 9. Les écritures 2a56, 253b, etc. désignent des nombres décimaux.</p>
+<h3>1. 2a56 divisible par 3</h3>
+<p>La somme des chiffres est 2 + a + 5 + 6 = 13 + a. Elle varie de 13 à 22 ; les multiples de 3 possibles sont 15,18,21.</p>
+<p class="answer">a ∈ {2,5,8}.</p>
+<h3>2. 253b divisible par 4 et par 3</h3>
+<p>Par 4 : les deux derniers chiffres représentent 30 + b. Parmi 30,…,39, les multiples de 4 sont 32 et 36, donc b ∈ {2,6}.</p>
+<p>Par 3 : la somme vaut 10 + b. Pour b = 2, elle vaut 12 ; pour b = 6, elle vaut 16. Seul le premier cas convient.</p>
+<p class="answer">b = 2 : le nombre est 2 532.</p>
+<h3>3. 2c37 divisible par 3, mais pas par 9</h3>
+<p>La somme vaut 12 + c. La divisibilité par 3 donne c ∈ {0,3,6,9}, avec des sommes 12,15,18,21. On exclut c = 6, car 18 est divisible par 9.</p>
+<p class="answer">c ∈ {0,3,9}.</p>
+<h2 style="margin-top:26px">Exercice 7 · Combiner les critères</h2>
+<h3>1. 23a4 divisible par 3</h3>
+<p>La somme vaut 2 + 3 + a + 4 = 9 + a. Comme 9 est divisible par 3, a doit lui aussi être divisible par 3.</p>
+<p class="answer">a ∈ {0,3,6,9}.</p>
+<h3>2. 23b5c divisible par 5 et par 3</h3>
+<p>Par 5 : c = 0 ou c = 5. La somme des chiffres vaut 10 + b + c.</p>
+<table><thead><tr><th>Dernier chiffre c</th><th>Condition par 3</th><th>Valeurs de b</th></tr></thead><tbody><tr><td>0</td><td>10 + b multiple de 3</td><td>2,5,8</td></tr><tr><td>5</td><td>15 + b multiple de 3</td><td>0,3,6,9</td></tr></tbody></table>
+<p class="answer">Les couples (b,c) sont :<br>{(2,0),(5,0),(8,0),(0,5),(3,5),(6,5),(9,5)}.</p>
+<p class="compact">On obtient 23 250 ; 23 550 ; 23 850 ; 23 055 ; 23 355 ; 23 655 ; 23 955. Chacun est divisible par 15, donc par 3 et par 5.</p>
+<h3>3. 47d35 divisible par 3, mais pas par 9</h3>
+<p>La somme vaut 4 + 7 + d + 3 + 5 = 19 + d. La divisibilité par 3 donne d ∈ {2,5,8}, avec les sommes 21,24,27. On exclut d = 8 car 27 est divisible par 9.</p>
+<p class="answer">d ∈ {2,5}.</p>
+<p class="footer-note">À retenir : pour « divisible par 3 et pas par 9 », trouver d’abord tous les candidats pour 3, puis retirer ceux qui conviennent aussi à 9. Calculs et ensembles de chiffres vérifiés par calcul exact ; ce document n’est pas un corrigé fourni par l’auteur de l’énoncé.</p>
+</section>
+</main><script>document.getElementById('print').addEventListener('click',()=>window.print());</script></body></html>
